@@ -1,2 +1,10 @@
 # TrabajoFinalCacef
 Monografía - Proyecto Final Realizado para el Diplomado en Estadística Aplicada a la Toma de Decisiones 3ra Versión, Universidad Mayor de San Simón
+
+El presente proyecto desarrolla un modelo de Machine Learning para clasificar si un crédito otorgado por la cooperativa “CACEF” caerá en default o no, utilizando características financieras del crédito y el comportamiento histórico de los clientes. Siguiendo la metodología CRISP-DM, se realizó un análisis exploratorio de datos para identificar patrones y distribuciones relevantes, seguido de una preparación del conjunto de datos para el entrenamiento de los modelos. Se aplicaron técnicas de balanceo como SMOTE y transformaciones en las variables numéricas para mejorar la calidad de los datos.
+
+Los modelos de clasificación entrenados fueron, la red neuronal profunda (DNN) obtuvo el mejor rendimiento con un recall de 55.6% y una precisión del 40%, mientras que la regresión logística alcanzó un recall del 39% y una precisión del 5%, seguidos del modelo Random Forest con 33% de Recall y 2.4% de Precisión, finalmente se tiene al modelo XGBoost con 5.6% de Recall y 2.6% de Precisión. Estos resultados reflejan el impacto del desbalance en los datos, aunque muestran una mejora en la detección de casos de default en comparación con el modelo actual de la cooperativa.
+
+Los hallazgos indican que variables como la tasa de interés, la duración del crédito y el monto diferido tienen una alta influencia en la predicción del incumplimiento. Sin embargo, la calidad de los datos fue un desafío, ya que muchas variables presentaron valores sesgados o incompletos, particularmente en ingresos y gastos de los clientes.
+
+En conclusión, los modelos desarrollados representan una mejora en la detección de créditos en riesgo, aunque persisten limitaciones debido a la calidad y el desbalance de los datos. Los resultados sugieren la necesidad de optimizar la recolección de información financiera de los clientes para mejorar la capacidad predictiva de futuros modelos.
